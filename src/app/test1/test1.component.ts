@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Test1Component implements OnInit {
 
+  modelVal = '';
+  arrayVal = ['1', '2'];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  addValue() {
+    this.arrayVal.push(this.modelVal);
   }
 
 }

@@ -1,3 +1,9 @@
 <p>
   test1 works!
 </p>
+
+<input id="in1" [(ngModel)]="modelVal">
+<button (click)="addValue()">Add it</button>
+<p>{{ modelVal}}</p>
+<p>---------------------------</p>
+<p *ngFor="let inputVal of arrayVal">{{ inputVal}}</p>
